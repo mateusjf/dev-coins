@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Coins</title>  
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="img/logo.png" alt="logo dev coins" id="logo-img">
+            <span>Dev Coins</span>
+        </h1>
+    </header>
+    <main>
+        <section id="balanco">
+            <h2 class="sr-only">Balanço</h2>
+            
+            <div class="cards" id="entrada">
+                <h3>Entrada</h3>
+                <p>R$ 0.00</p>
+                <img src="img/income.svg" alt="">
+            </div>
+
+            <div class="cards" id="saida">
+                <h3>Saídas</h3>
+                <p>R$ 0.00</p>
+                <img src="img/expense.svg" alt="">
+            </div>
+            
+            <div class="cards" id="total">
+                <h3>Total</h3>
+                <p>R$ 0.00</p>
+                <img id="diferente" src="img/total.svg" alt="">
+            </div>
+        </section>
+
+        <section id="dados">
+            <h2 class="sr-only">Transações</h2>
+
+            <a href="#" id="button-transacao">+ Adicionar Transação</a>
+
+            <table class="tabela">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <div class="modal">
+        <div class="caixa">
+            <h2>Nova Transação</h2>
+
+            <form action="">
+                <div class="input-group">
+                    <input type="text" placeholder="Descrição">
+                </div>
+                <div class="input-group">
+                    <input type="number" placeholder="0,00" step=".1">
+                    <p>Use o sinal - (negativo) para despesas e , (vírgula) para casas decimais</p>
+                </div>
+
+                <div class="input-group">
+                    <input type="date">
+                </div>
+            </form>
+
+            <div class="botoes">
+                <button id="salvar">Salvar</button>
+                <button id="cancelar">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Dev Coins</p>
+    </footer>
+    <script src="js/dao.js"></script>
+    <script src="js/transacao.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

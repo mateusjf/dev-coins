@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans:wght@300&family=Poppins:wght@100;200&display=swap');
+:root{
+    --amarelo: #f1c40f;
+    --preto: #3a4750;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(243, 243, 243);
+}
+header{
+    background: var(--preto);
+    padding: 1em 0em;
+    padding-bottom: 4.5em;
+    text-align: center;
+    /* line-height: 5.0; */
+    /* font-size: 1em; */
+    border-bottom: 4px solid var(--amarelo);
+    color: var(--amarelo);
+    margin-bottom: -5.5em;
+    font-family: 'Open Sans';
+}
+h1{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+header span{
+    /* flex: 1; */
+    margin: 10px 0;
+    /* background: red; */
+}
+header img{
+    /* flex: 1; */
+    /* background: red; */
+}
+#logo-img{
+    width: 70px;
+    height: 70px;
+}
+section{
+    
+}
+.cards{
+    padding: 1.2em;
+    width: 90%;
+    border: 2.5px solid var(--amarelo);
+    margin: 1.45em auto;
+    border-radius: 5px;
+    background: white;
+    position: relative;
+}
+.cards p, .cards h3{
+    padding: 0.6em 0;
+}
+.cards h3{
+    font-size: 1.4em;
+    margin: 0 0 0 15px;
+    font-family: 'Noto Sans';
+}
+.cards p{
+    font-size: 2.4em;
+    font-family: 'Poppins';
+}
+.cards img{
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    width: 50px;
+    height: 50px;
+    color: var(--amarelo);
+}
+#diferente{
+    width: 45px;
+    height: 45px; 
+    background: var(--amarelo);
+    border-radius: 50px;
+}
+.sr-only{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+#button-transacao{
+    display: block;
+    margin: 10px 40px;
+    text-decoration: none;
+    color: var(--amarelo);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.258em;
+}
+table{
+    width: 90%;
+    background: var(--amarelo);
+    text-align: center;
+    margin: 25px auto;
+    border-collapse: separate;
+    border-spacing: 2px;
+    margin-bottom: 1.5em;
+    font-family: 'Poppins';
+    border-radius: 7px;
+}
+tr{
+    font-family: Arial, Helvetica, sans-serif;
+}
+td, th{
+    width: 25%;
+    padding: 0.8em;
+}
+td span{
+    color: rgb(1, 151, 26);
+}
+td span.despesa{
+    color: rgb(199, 23, 23);
+}
+footer{
+    color: var(--preto);
+    text-align: center;
+    font-size: 1.59em;
+    padding: 1.3em 0;
+    font-family: 'Open Sans';
+}
+.modal{
+    background: rgba(0, 0, 0, 0.59);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.active{
+    display: block;
+}
+.caixa{
+    padding: 30px 50px;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    height: 330px;
+    background: rgb(243, 243, 243);
+}
+.caixa h2{
+    font-family: 'Noto Sans';
+    color: rgb(110, 110, 110);
+}
+.caixa p{
+    margin-bottom: 10px;
+    font-size: 0.85em;
+    color: rgb(150, 150, 150);
+    font-family: Arial, Helvetica, sans-serif
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    border: 1px solid var(--amarelo);
+    /* outline: none; */
+    padding: 8px 12px;
+    margin: 5.5px 0;
+    background: rgb(255, 255, 255);
+}
+.botoes{
+    display: flex;
+    justify-content: space-between;
+}
+.caixa button{
+    padding: 15px 50px;
+    outline: none;
+    border-radius: 4.5px;  
+    margin: 10px 5px;
+    flex: 1;
+    cursor: pointer;
+}
+a.remover{
+    display: block;
+}
+#salvar{
+    background: var(--amarelo);
+    color: white;
+    border: 2px solid var(--amarelo);
+}
+#cancelar{
+    /* background: rgb(250, 110, 110); */
+    color: rgb(250, 110, 110);
+    border: 2px solid rgb(250, 110, 110);
+}
+tbody tr:hover{
+    background: rgb(235, 210, 112);
+}
+@media screen and (min-width: 800px) {
+    body {
+      /* background: lightblue; */
+    }
+    section#balanco{
+        display: flex;
+        justify-content: center;
+    }
+
+    .cards{
+        width: 280px;
+        margin: 10px;
+        /* height: 180px; */
+        padding: 0.3em 1.3em;
+        font-size: 0.7em;
+    }
+    .cards img{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+    }
+
+    #diferente{
+        width: 28px;
+        height: 28px; 
+    }
+    .cards h3{
+        /* font-size: 1.3em; */
+    }
+    .cards p{
+        font-size: 2.1em;
+    }
+
+    section#dados{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+  }
+  @media screen and (min-width: 580px){
+    .caixa{
+        width: 90%;
+        margin: auto;
+    }
+  }
+  @media screen and (min-width: 580px){
+    .caixa{
+        width: 580px;
+        margin: auto;
+    }
+  }
