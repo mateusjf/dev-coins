@@ -9,7 +9,7 @@ Um app de finanças pessoais feito em HTML, CSS e Javascript e utilização de r
     <li>Modal para adicionar as transações</li>
     <li>Display de valores de "Entrada", "Saida" e "Total"</li>
     <li>Geração de ID (Chave Primaria) de forma automática</li>
-    <li>Tabela dinamica, contendo cada transação e seus respectivos dados</li>
+    <li>Tabela dinâmica, contendo cada transação e seus respectivos dados</li>
     <li>Exclusão de transação</li>
     <li>Responsivo</li>
   </ul>
