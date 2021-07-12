@@ -1,6 +1,7 @@
 # Dev-Coins
 
-Uma aplicação que faz uso da técnica Pomodoro que é um método de gerenciamento de tempo e produtividade
+Um app de finanças pessoais feito em HTML, CSS e Javascript e utilização de recursos dos navegador como o LocalStorage para fazer a persistência dos dados
+
 
 <h3>Recursos</h3>
   <ul>
