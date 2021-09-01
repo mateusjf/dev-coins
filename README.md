@@ -16,11 +16,11 @@ Um app de finanças pessoais feito em HTML, CSS e Javascript e utilização de r
   
   <h3>Screenshot</h3>
     <h4 align="center">
-      <img alt="Pomodoro App" src="./img_readme/1.png" />
+      <img alt="Dev Coins" src="./img_readme/1.png" />
     </h4>
     <h4 align="center">
-      <img alt="Pomodoro App" src="./img_readme/2.png" />
+      <img alt="Dev Coins" src="./img_readme/2.png" />
     </h4>
     <h4 align="center">
-      <img alt="Pomodoro App" src="./img_readme/3.png" />
+      <img alt="Dev Coins" src="./img_readme/3.png" />
     </h4>
